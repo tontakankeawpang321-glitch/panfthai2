@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Royal Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+
+    <!-- Metallic Gold Outer Ring -->
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="30%" stop-color="#eab308" />
+      <stop offset="70%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#a16207" />
+    </linearGradient>
+
+    <!-- 3D Gold Lotus Gradient -->
+    <linearGradient id="goldPetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="25%" stop-color="#fde047" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+
+    <!-- Herbal Compress Fabric Gradient -->
+    <linearGradient id="compressGrad" x1="30%" y1="10%" x2="70%" y2="90%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#fef3c7" />
+      <stop offset="85%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+
+    <!-- Emerald Leaf Accent -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+
+    <!-- Aroma Glow Aura -->
+    <radialGradient id="aromaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#818cf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft Drop Shadows -->
+    <filter id="shadow3d" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- App Icon Base (Smooth iOS squircle / rounded rect) -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Subtle Inner Aura Glow -->
+  <circle cx="256" cy="256" r="220" fill="url(#aromaGlow)" />
+
+  <!-- Metallic Gold Bevel Border -->
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="url(#goldBorder)" stroke-width="8" opacity="0.85" />
+  <rect x="22" y="22" width="468" height="468" rx="90" fill="none" stroke="#fde047" stroke-width="1.5" opacity="0.4" />
+
+  <!-- Steam / Aroma Swirl Waves (Soothing Thai Spa Scent) -->
+  <path d="M 230 140 Q 210 100 240 70 T 235 30" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" opacity="0.45" />
+  <path d="M 270 145 Q 295 105 275 75 T 285 35" fill="none" stroke="#67e8f9" stroke-width="5" stroke-linecap="round" opacity="0.4" />
+
+  <!-- MAIN GRAPHIC: HERBAL COMPRESS & ROYAL THAI LOTUS (3D Layered) -->
+  <g filter="url(#shadow3d)">
+
+    <!-- Herbal Leaves behind compress -->
+    <path d="M 170 330 C 130 300 120 230 180 220 C 190 270 200 300 170 330 Z" fill="url(#leafGrad)" opacity="0.9" />
+    <path d="M 342 330 C 382 300 392 230 332 220 C 322 270 312 300 342 330 Z" fill="url(#leafGrad)" opacity="0.9" />
+
+    <!-- Herbal Compress Top Handle (ผูกลูกประคบสมุนไพรไทย) -->
+    <path d="M 240 185 L 246 120 C 246 110 266 110 266 120 L 272 185 Z" fill="url(#compressGrad)" stroke="#78350f" stroke-width="2" />
+    <!-- Handle Tie Ribbons -->
+    <rect x="238" y="155" width="36" height="12" rx="4" fill="url(#goldBorder)" />
+    <circle cx="256" cy="112" r="14" fill="url(#goldPetal)" />
+
+    <!-- Herbal Compress Sphere Body (ลูกประคบกลมมน) -->
+    <ellipse cx="256" cy="245" rx="88" ry="78" fill="url(#compressGrad)" stroke="#92400e" stroke-width="1.5" />
+
+    <!-- Compress Fabric Texture Pleats -->
+    <path d="M 240 167 Q 210 210 205 260" fill="none" stroke="#92400e" stroke-width="2" opacity="0.4" />
+    <path d="M 256 167 Q 256 220 256 280" fill="none" stroke="#92400e" stroke-width="2" opacity="0.3" />
+    <path d="M 272 167 Q 302 210 307 260" fill="none" stroke="#92400e" stroke-width="2" opacity="0.4" />
+
+    <!-- ROYAL GOLDEN LOTUS BLOSSOM (ฐานกลีบดอกบัวทองคำ 3 มิติ) -->
+    <!-- Outer Lotus Petals (Left & Right) -->
+    <path d="M 256 365 C 160 365 110 310 90 265 C 130 265 190 305 256 365 Z" fill="url(#goldPetal)" />
+    <path d="M 256 365 C 352 365 402 310 422 265 C 382 265 322 305 256 365 Z" fill="url(#goldPetal)" />
+
+    <!-- Mid Lotus Petals -->
+    <path d="M 256 385 C 180 385 145 320 135 285 C 175 280 220 330 256 385 Z" fill="url(#goldBorder)" />
+    <path d="M 256 385 C 332 385 367 320 377 285 C 337 280 292 330 256 385 Z" fill="url(#goldBorder)" />
+
+    <!-- Center Grand Lotus Petal -->
+    <path d="M 256 285 C 220 340 225 395 256 415 C 287 395 292 340 256 285 Z" fill="url(#goldPetal)" stroke="#fef08a" stroke-width="1.5" />
+
+    <!-- Lotus Bottom Pedestal Base -->
+    <path d="M 180 415 Q 256 438 332 415 Q 256 448 180 415 Z" fill="url(#goldBorder)" />
+
+    <!-- Sparkle Stars / Brilliance (ประกายแสงทอง) -->
+    <g filter="url(#goldGlow)">
+      <!-- Star 1 (Top Left) -->
+      <path d="M 130 150 Q 140 150 140 140 Q 140 150 150 150 Q 140 150 140 160 Q 140 150 130 150 Z" fill="#ffffff" />
+      <circle cx="140" cy="150" r="2.5" fill="#fde047" />
+
+      <!-- Star 2 (Top Right) -->
+      <path d="M 370 125 Q 382 125 382 113 Q 382 125 394 125 Q 382 125 382 137 Q 382 125 370 125 Z" fill="#ffffff" />
+      <circle cx="382" cy="125" r="3" fill="#fde047" />
+
+      <!-- Star 3 (Center Lotus Crown) -->
+      <circle cx="256" cy="295" r="4" fill="#ffffff" />
+    </g>
+  </g>
+
+  <!-- Traditional Thai Line Art Floral Corner Accent (Top Left & Top Right) -->
+  <path d="M 45 90 Q 65 65 90 45" fill="none" stroke="url(#goldBorder)" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+  <circle cx="65" cy="65" r="3" fill="#fde047" opacity="0.8" />
+  <path d="M 467 90 Q 447 65 422 45" fill="none" stroke="url(#goldBorder)" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+  <circle cx="447" cy="65" r="3" fill="#fde047" opacity="0.8" />
+</svg>
